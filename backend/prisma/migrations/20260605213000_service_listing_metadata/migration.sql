@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "Service"
+ADD COLUMN "category" TEXT,
+ADD COLUMN "imageUrl" TEXT,
+ADD COLUMN "tags" TEXT[] NOT NULL DEFAULT ARRAY[]::TEXT[];
