@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { useAuth } from "./hooks/useAuth";
-import AppLayout from "./layouts/AppLayout";
+import DashboardLayout from "./layouts/DashboardLayout";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import ForgotPasswordPage from "./pages/ForgotPasswordPage";
@@ -57,7 +57,7 @@ export default function App() {
 
           <Route
             element={
-              <AppLayout
+              <DashboardLayout
                 roleGroup="provider"
                 allowedRoles={["USER", "ADMIN"]}
                 basePath="/provider"
@@ -84,7 +84,7 @@ export default function App() {
 
           <Route
             element={
-              <AppLayout
+              <DashboardLayout
                 roleGroup="customer"
                 allowedRoles={["CUSTOMER"]}
                 basePath="/customer"
