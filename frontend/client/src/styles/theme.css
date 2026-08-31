@@ -1,0 +1,43 @@
+/* ==========================================
+   LoveLily Design System
+   ========================================== */
+
+:root {
+  /* Brand Colors */
+  --color-background: #FFFDF9;
+  --color-surface: #FFFFFF;
+
+  --color-primary: #D4AF8C;      /* Rose Gold */
+  --color-secondary: #D4AF37;    /* Luxury Gold */
+
+  --color-text: #222222;         /* Charcoal */
+  --color-text-light: #6B7280;   /* Soft Gray */
+
+  --color-border: #ECECEC;
+
+  /* Buttons */
+  --color-button-primary: #D4AF8C;
+  --color-button-hover: #C89D73;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.06);
+  --shadow-md: 0 8px 24px rgba(0,0,0,.08);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Spacing */
+  --space-xs: .5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* Max Width */
+  --container-width: 1280px;
+
+  /* Transition */
+  --transition: .3s ease;
+}

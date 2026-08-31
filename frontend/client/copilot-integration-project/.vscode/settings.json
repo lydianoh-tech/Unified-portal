@@ -1,0 +1,17 @@
+{
+    "editor.formatOnSave": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "eslint.enable": true,
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true
+    },
+    "prettier.requireConfig": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+}
