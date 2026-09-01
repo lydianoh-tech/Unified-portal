@@ -11,7 +11,7 @@ export default function Hero() {
 
           <h1 className={styles.title}>
             Luxury Beauty,
-            <span> Naturally.</span>
+            <span>Naturally.</span>
           </h1>
 
           <p className={styles.description}>
