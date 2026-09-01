@@ -1,0 +1,22 @@
+.cardSymbol {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 1.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-primary);
+  background: rgba(212, 175, 140, 0.12);
+
+  border: 1px solid rgba(212, 175, 140, 0.25);
+  border-radius: 50%;
+
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}

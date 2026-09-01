@@ -1,0 +1,203 @@
+.hero {
+  background: var(--color-background);
+  padding: 5rem 0 6rem;
+  overflow: hidden;
+}
+
+.container {
+  width: min(100% - 3rem, var(--container-width));
+  min-height: 620px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+
+.content {
+  max-width: 620px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+
+  color: var(--color-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.title {
+  margin: 0;
+
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+}
+
+.title span {
+  display: block;
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+.description {
+  max-width: 520px;
+  margin: 1.75rem 0 0;
+
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 0.75rem 1.4rem;
+
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.primaryButton {
+  color: #ffffff;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.primaryButton:hover {
+  background: var(--color-secondary);
+  border-color: var(--color-secondary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.secondaryButton {
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid var(--color-border);
+}
+
+.secondaryButton:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageFrame {
+  width: min(100%, 500px);
+  aspect-ratio: 4 / 5;
+
+  padding: 1rem;
+
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 2rem;
+
+  box-shadow: var(--shadow-md);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1.5rem;
+
+  color: var(--color-primary);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(212, 175, 140, 0.18),
+      rgba(212, 175, 55, 0.08)
+    );
+
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 3.5rem 0 4rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    min-height: auto;
+  }
+
+  .content {
+    max-width: none;
+    text-align: center;
+  }
+
+  .description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .visual {
+    order: -1;
+  }
+
+  .imageFrame {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .container {
+    width: min(100% - 2rem, var(--container-width));
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+  }
+}

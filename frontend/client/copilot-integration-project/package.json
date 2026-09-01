@@ -1,0 +1,30 @@
+{
+  "name": "copilot-integration-project",
+  "version": "1.0.0",
+  "description": "A project for integrating Copilot with custom chat functionalities.",
+  "main": "src/integrations/copilot.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/copilot-integration-project.git"
+  },
+  "keywords": [
+    "copilot",
+    "integration",
+    "customization"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.5.4",
+    "jest": "^27.0.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "ts-jest": "^27.0.3"
+  }
+}
